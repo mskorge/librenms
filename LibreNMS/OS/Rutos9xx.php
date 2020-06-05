@@ -36,7 +36,7 @@ class Rutos9xx extends OS implements
 {
     public function discoverWirelessSnr()
     {
-        $oid = '.1.3.6.1.4.1.48690.2.22.0'; // TELTONIKA-MIB::SINR.0
+        $oid = '.1.3.6.1.4.1.48690.2.22.0'; // TLT-MIB::SINR.0
         return array(
             new WirelessSensor('snr', $this->getDeviceId(), $oid, 'rutos-9xx', 1, 'SINR', null, -1, 1),
         );
@@ -44,7 +44,7 @@ class Rutos9xx extends OS implements
 
     public function discoverWirelessRssi()
     {
-        $oid = '.1.3.6.1.4.1.48690.2.23.0'; // TELTONIKA-MIB::RSRP.0
+        $oid = '.1.3.6.1.4.1.48690.2.23.0'; // TLT-MIB::RSRP.0
         return array(
             new WirelessSensor('rssi', $this->getDeviceId(), $oid, 'rutos-9xx', 1, 'RSRP', null, 1, 1),
         );

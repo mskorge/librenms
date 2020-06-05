@@ -1,4 +1,4 @@
-mib: TELTONIKA-MIB
+mib: TLT-MIB
 modules:
   sensors:
     pre-cache:

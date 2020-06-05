@@ -1,5 +1,5 @@
 <?php
-$rutos_9xx_tmp = snmp_get_multi_oid($device, ['RouterName.0', 'ModemSerial.0', 'FirmwareVersion.0'], '-OUQs', 'TELTONIKA-MIB');
+$rutos_9xx_tmp = snmp_get_multi_oid($device, ['RouterName.0', 'ModemSerial.0', 'FirmwareVersion.0'], '-OUQs', 'TLT-MIB');
 $hardware = $rutos_9xx_tmp['RouterName.0'];
 $serial   = $rutos_9xx_tmp['ModemSerial.0'];
 $version  = $rutos_9xx_tmp['FirmwareVersion.0'];
